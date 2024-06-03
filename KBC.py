@@ -24,8 +24,8 @@ for i in range(0,len(levels)):
         if(inp==question[i][5]):
             print("Correct")
             money=money+levels[i]
-            print(f"\nmoney won is RS{money}")
+            print(f"\nmoney won is RS {money}")
 
         else:
             print("Wrong")
-            print(f"\nmoney won is RS{money}")
+            print(f"\nmoney won is RS {money}")
