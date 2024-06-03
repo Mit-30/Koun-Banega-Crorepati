@@ -18,11 +18,14 @@ for i in range(0,len(levels)):
     print(f"c.{question[i][3]}               d.{question[i][4]}")
 
     inp=int(input("Enter Option from 1-4 = "))
-    if(inp==question[i][5]):
-        print("Correct")
-        money=money+levels[i]
-        print(f"\nmoney won is RS{money}")
-
+   if inp>4:
+        raise ValueError("Value error")
     else:
-        print("Wrong")
-        print(f"\nmoney won is RS{money}")
+        if(inp==question[i][5]):
+            print("Correct")
+            money=money+levels[i]
+            print(f"\nmoney won is RS{money}")
+
+        else:
+            print("Wrong")
+            print(f"\nmoney won is RS{money}")
